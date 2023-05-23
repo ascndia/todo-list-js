@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(rgb(85, 85, 92),rgb(48, 48, 53));
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 20px 0;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    background-color: rgba(173, 173, 173, 0.267);
+    flex-direction: column;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 5px;
+}
+.container > div{
+    margin: 0 0 10px;
+    display: flex;
+    padding: 10px 10px;
+}
+.header{
+    flex-direction: column;
+    padding: 0 0 0 20px;
+    color: white;
+    background-color: rgba(70, 70, 70, 0.699);
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(39, 39, 39);
+}
+.header h1{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+.main{
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height:92%;
+    margin-top: 0;
+}
+
+.lists, .tasks {
+    width: 50%;
+    display: flex;
+    padding:  0  0 10px ;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(173, 173, 173, 0.267);
+    border: 2px solid rgb(39, 39, 39);
+} 
+.lists{
+    border-right: 1px solid rgb(39, 39, 39);
+}
+.tasks{
+    border-left: 1px solid rgb(39, 39, 39);
+}
+.main-head{
+    width: 100%;
+    justify-content: space-around;
+    
+    display: flex;
+    background-color: rgb(88, 88, 88);
+    padding: 10px 10px;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(39, 39, 39);
+}
+.main-add{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+input, button{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.main-head input{
+    background-color: rgb(202, 202, 202);
+}
+.main-head button{
+    background-color: gray;
+}
+.main-head button:hover{
+    background-color: rgb(172, 172, 172);
+}
+button{
+    cursor: pointer;
+}
+.main-header{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+.checkboxes{ 
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tasks-container, .lists-container{
+    width: 100%;
+    height: 90%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+.list{
+    cursor: pointer;
+}
+.task, .list{
+    border: 2px solid rgb(39, 39, 39);
+    width: 100%;
+    min-height: 40px;
+    background-color: rgba(80, 80, 80, 0.267);
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.task p, .list p{
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+.task-checked{
+    opacity: 40%;
+}
+.task-header{
+    border: 0px;
+    display: flex;
+    align-items: center;
+    min-width: 15%;
+    justify-content: space-between;
+}
+.task-action{
+    justify-content: space-around;
+    display: flex;
+    min-width: 60px;
+    margin-left: 10px;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+}
+.task-edit:hover{
+    color: rgb(73, 73, 255);
+}
+
+.task-delete:hover, .list-delete:hover{
+    color: rgb(255, 72, 72)
+}
+.task-header input{
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: white;
+}
+.empty{
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    color: white;
+}
+.list-selected, .list:hover, .task:hover{
+    border: 2px solid white;
+}
+@media (max-width: 762px) {
+    .container{
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .main-head{
+
+        justify-content: space-between;
+    }
+    .main-add{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30px;
+    }
+    .main-add input{
+        width: 93%;
+    }
+    .lists, .tasks{
+        border-radius: 5px;
+        width:95%;
+        margin-bottom: 30px;
+    }
+    .lists{
+        border-right: 2px solid rgb(39, 39, 39);
+    }
+    .tasks{
+        border-left: 2px solid rgb(39, 39, 39);
+    }
+  }
