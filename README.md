@@ -1,5 +1,6 @@
 # todo-list-js
 This is a simple web application that allows users to create and manage their todo list. The project is implemented using JavaScript and provides an interactive user interface for adding, editing, and marking tasks as complete.
+to view website visit: To visit my website go: https://ascndia.github.io/todo-list-js/
 
 ## Features
 
