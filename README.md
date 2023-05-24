@@ -1,28 +1,20 @@
-# To-Do List Project
+# todo-list-js
+This is a simple web application that allows users to create and manage their todo list. The project is implemented using JavaScript and provides an interactive user interface for adding, editing, and marking tasks as complete.
+to view website visit: To visit my website go: https://ascndia.github.io/todo-list-js/
 
-To visit my website go: https://ascndia.github.io/todo-list-js/
+## Features
 
-This is a simple To-Do list project that was built as a first JavaScript project for learning purposes. The project was built to explore the following concepts:
+- Add new lists: Users can enter a list name and add it to the lists of list.
+- Add new tasks: Users can enter a task description and add it to the selected list.
+- Remove list: Completed or unwanted list can be removed.
+- Edit tasks: Existing tasks can be edited to update their description.
+- Mark tasks as complete: Users can mark tasks as complete once they are finished.
+- Remove tasks: Completed or unwanted tasks can be removed from the list.
+- Local storage: The todo list data is stored in the browser's local storage, ensuring persistence across sessions.
 
-Local Storage: The project uses Local Storage to save the To-Do list items between sessions, allowing the user to close and re-open the application without losing their progress.
-JavaScript Events: The project makes use of various JavaScript events to update the DOM in response to user actions, such as clicking the "Add" button to add a new item to the list.
-DOM Manipulation: The project makes use of JavaScript to manipulate the DOM, adding and removing elements as needed to update the To-Do list.
+## Installation
 
+1. Clone the repository:
 
-# Getting Started
-
-To run the project, simply download the repository and open the index.html file in your web browser. The To-Do list should appear, ready for you to add your first item.
-
-
-# Usage
-
-To add a new item to the To-Do list, simply type your task into the input field and click the "Add" button. The new item will be added to the list, and saved to Local Storage so that it will be available the next time you open the application.
-
-To mark an item as completed, click the checkbox next to the task. This will cross out the task and move it to the bottom of the list.
-
-To remove an item from the list, click the "X" button next to the task. This will permanently remove the task from the list, and update Local Storage accordingly.
-
-
-# Contributing
-
-This project was built for learning purposes, and as such is not actively maintained. However, if you have suggestions for how the project could be improved, feel free to submit a pull request.
+   ```bash
+   git clone https://github.com/ascndia/todo-list-js.git
